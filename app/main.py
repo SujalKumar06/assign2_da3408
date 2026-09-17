@@ -7,7 +7,6 @@ FastAPI spam-detection service. Loads the model exported by train.py.
 """
 import os
 import socket
-import time
 from contextlib import asynccontextmanager
 
 import joblib
@@ -39,8 +38,7 @@ app = FastAPI(title="Spam Detection API", lifespan=lifespan)
 
 
 class PredictRequest(BaseModel):
-    text: str = Field(..., min_length=1)
-
+    text: str
 
 @app.get("/healthz")
 def healthz():
@@ -51,7 +49,6 @@ def healthz():
         )
     return {
         "status": "ok",
-        "model_version": _bundle["model_version"],
         "pod": POD_NAME,
         "node": NODE_NAME,
     }
@@ -62,13 +59,8 @@ def predict(request: PredictRequest):
     if _bundle is None:
         raise HTTPException(status_code=503, detail="Model not loaded yet")
 
-    t0 = time.perf_counter()
     label = _bundle["model"].predict([request.text])[0]
-    latency_ms = round((time.perf_counter() - t0) * 1000, 3)
 
     return {
-        "label": label,
-        "latency_ms": latency_ms,
-        "served_by_pod": POD_NAME,
-        "served_by_node": NODE_NAME,
+        "label": label
     }

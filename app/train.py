@@ -1,7 +1,3 @@
-"""
-train.py — AIOps Module 3 Assignment
-Trains and exports the spam/ham model served by main.py.
-"""
 import argparse
 
 import joblib
@@ -35,7 +31,7 @@ def main():
 
     preds = model.predict(X_test)
     print(f"accuracy={accuracy_score(y_test, preds):.4f}  f1={f1_score(y_test, preds, pos_label='spam'):.4f}")
-    print(f"{len(df)} rows, {df['text'].nunique()} unique texts -- duplicates span the split, so this is optimistic")
+    print(f"{len(df)} rows, {df['text'].nunique()} unique texts - duplicates span the split, so this is optimistic")
 
     joblib.dump({"model": model, "labels": sorted(y.unique().tolist()), "model_version": MODEL_VERSION}, args.out)
     print(f"Saved model bundle to {args.out}")

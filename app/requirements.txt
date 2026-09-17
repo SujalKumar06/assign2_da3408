@@ -1,0 +1,7 @@
+scikit-learn==1.9.0
+joblib==1.5.3
+fastapi==0.138.0
+uvicorn[standard]==0.38.0
+redis==8.1.0
+pandas==2.3.3
+pydantic
