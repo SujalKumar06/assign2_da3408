@@ -12,16 +12,16 @@
       "total_rows": 100,
       "invalid_rows": 15,
       "elapsed_seconds": 0.001,
-      "pod_name": "shard-validation-job-0-85k26",
-      "node_name": "minikube"
+      "pod_name": "shard-validation-job-0-2px8d",
+      "node_name": "minikube-m02"
     },
     {
       "completion_index": 1,
       "shard": "shard_1.csv",
       "total_rows": 100,
       "invalid_rows": 5,
-      "elapsed_seconds": 0.0,
-      "pod_name": "shard-validation-job-1-qd6dm",
+      "elapsed_seconds": 0.001,
+      "pod_name": "shard-validation-job-1-klmhj",
       "node_name": "minikube-m02"
     },
     {
@@ -30,7 +30,7 @@
       "total_rows": 100,
       "invalid_rows": 11,
       "elapsed_seconds": 0.001,
-      "pod_name": "shard-validation-job-2-t55rn",
+      "pod_name": "shard-validation-job-2-vlw2x",
       "node_name": "minikube"
     },
     {
@@ -39,16 +39,16 @@
       "total_rows": 100,
       "invalid_rows": 9,
       "elapsed_seconds": 0.0,
-      "pod_name": "shard-validation-job-3-nwlpg",
-      "node_name": "minikube-m02"
+      "pod_name": "shard-validation-job-3-tk457",
+      "node_name": "minikube"
     },
     {
       "completion_index": 4,
       "shard": "shard_4.csv",
       "total_rows": 100,
       "invalid_rows": 6,
-      "elapsed_seconds": 0.001,
-      "pod_name": "shard-validation-job-4-l847h",
+      "elapsed_seconds": 0.003,
+      "pod_name": "shard-validation-job-4-b9x8h",
       "node_name": "minikube-m02"
     },
     {
@@ -57,8 +57,8 @@
       "total_rows": 100,
       "invalid_rows": 10,
       "elapsed_seconds": 0.001,
-      "pod_name": "shard-validation-job-5-f92cg",
-      "node_name": "minikube-m02"
+      "pod_name": "shard-validation-job-5-hftln",
+      "node_name": "minikube"
     },
     {
       "completion_index": 6,
@@ -66,8 +66,8 @@
       "total_rows": 100,
       "invalid_rows": 13,
       "elapsed_seconds": 0.001,
-      "pod_name": "shard-validation-job-6-m8c9c",
-      "node_name": "minikube"
+      "pod_name": "shard-validation-job-6-286zv",
+      "node_name": "minikube-m02"
     },
     {
       "completion_index": 7,
@@ -75,8 +75,8 @@
       "total_rows": 100,
       "invalid_rows": 6,
       "elapsed_seconds": 0.001,
-      "pod_name": "shard-validation-job-7-98jck",
-      "node_name": "minikube-m02"
+      "pod_name": "shard-validation-job-7-7txkv",
+      "node_name": "minikube"
     }
   ]
 }
