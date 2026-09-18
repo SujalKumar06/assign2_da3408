@@ -18,7 +18,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: validator
-        image: shard-validator:v1
+        image: shard-validator:latest
         imagePullPolicy: IfNotPresent
         env:
         - name: DATA_DIR
