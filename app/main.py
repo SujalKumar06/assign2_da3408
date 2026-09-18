@@ -1,10 +1,3 @@
-"""
-main.py — AIOps Module 3 Assignment
-FastAPI spam-detection service. Loads the model exported by train.py.
-
-  POST /predict   {"text": "..."} -> {"label": "spam"|"ham"}
-  GET  /healthz   HTTP 200 once the model is loaded, 503 before
-"""
 import os
 import socket
 

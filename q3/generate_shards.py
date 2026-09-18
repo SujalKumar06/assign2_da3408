@@ -1,8 +1,3 @@
-"""
-generate_shards.py — AIOps Module 3 Assignment, Q3
-Generates 8 deterministic shards of user signup records, each with a known
-number of deliberately invalid rows.
-"""
 import argparse
 import csv
 import os

@@ -1,7 +1,3 @@
-"""
-validate_shard.py — AIOps Module 3 Assignment, Q3
-Entry point for each pod of the Kubernetes Indexed Job. Validates one shard.
-"""
 import csv
 import json
 import os
