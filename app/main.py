@@ -42,6 +42,7 @@ def healthz():
         )
     return {
         "status": "ok",
+        "version": "v2",
         "pod": POD_NAME,
         "node": NODE_NAME,
     }
